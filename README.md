@@ -6,6 +6,7 @@
 ![GitHub issues](https://img.shields.io/github/issues/SH20RAJ/BlurryImageLoader)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/SH20RAJ/BlurryImageLoader)
 ![GitHub stars](https://img.shields.io/github/stars/SH20RAJ/BlurryImageLoader?style=social)
+[![](https://data.jsdelivr.com/v1/package/gh/sh20raj/BlurryImageLoader/badge)](https://www.jsdelivr.com/package/gh/sh20raj/BlurryImageLoader)
 
 A JavaScript library for loading images with a blur effect.
 
@@ -36,7 +37,9 @@ You can also include `BlurryImageLoader` in your HTML directly from the jsDelivr
 ```html
 <!-- Latest version -->
 <script src="https://cdn.jsdelivr.net/gh/SH20RAJ/BlurryImageLoader@latest/BlurryImageLoader.js"></script>
-
+```
+or
+```html
 <!-- Specific version with npm (replace x.y.z with the version you need) -->
 <script src="https://cdn.jsdelivr.net/npm/blurry-image-loader@x.y.z/BlurryImageLoader.js"></script>
 ```
@@ -60,6 +63,13 @@ To load all images on a page with a blur effect, use `loadAllImagesWithBlur`:
 BlurryImageLoader.loadAllImagesWithBlur();
 ```
 
+Using Selectors:
+
+```javascript
+// Load all images with class .blurry-image
+BlurryImageLoader.loadAllImagesWithBlur('.blurry-image');
+```
+
 ### Example HTML
 
 ```html
@@ -73,6 +83,25 @@ BlurryImageLoader.loadAllImagesWithBlur();
     <img class="blurry-image" src="path/to/image.jpg" alt="Image">
 </div>
 ```
+
+## Usage in Node.js
+
+You can also use `BlurryImageLoader` in Node.js environments. Here's an example:
+
+```javascript
+const BlurryImageLoader = require('./blurry-image-loader');
+
+// Example usage in Node.js
+const images = [
+    'path/to/image1.jpg',
+    'path/to/image2.jpg',
+    'path/to/image3.jpg'
+];
+
+BlurryImageLoader.loadAllImagesWithBlur(images);
+```
+
+You can use the cdn in Node.js or NextJS accordingly.
 
 ## License
 
