@@ -8,7 +8,9 @@
 ![GitHub stars](https://img.shields.io/github/stars/SH20RAJ/BlurryImageLoader?style=social)
 [![](https://data.jsdelivr.com/v1/package/gh/sh20raj/BlurryImageLoader/badge)](https://www.jsdelivr.com/package/gh/sh20raj/BlurryImageLoader)
 
-A JavaScript library for loading images with a blur effect.
+A JavaScript library for loading images with a blur effect. 
+
+[Demo](https://sh20raj.github.io/BlurryImageLoader/demo.html)
 
 ## Description
 
