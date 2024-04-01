@@ -10,7 +10,7 @@
 
 A JavaScript library for loading images with a blur effect. 
 
-[Demo](https://sh20raj.github.io/BlurryImageLoader/demo.html)
+[Demo](https://sh20raj.github.io/BlurryImageLoader/demo.html) | [Codepen](https://codepen.io/SH20RAJ/pen/oNOozqW?editors=1010)
 
 ## Description
 
