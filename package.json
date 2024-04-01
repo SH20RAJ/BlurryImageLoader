@@ -1,0 +1,25 @@
+{
+  "name": "blurry-image-loader",
+  "version": "1.0.0",
+  "description": "A JavaScript library for loading images with a blur effect.",
+  "main": "blurry-image-loader.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "keywords": [
+    "image",
+    "loader",
+    "blur",
+    "javascript"
+  ],
+  "author": "SH20RAJ",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SH20RAJ/BlurryImageLoader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SH20RAJ/BlurryImageLoader/issues"
+  },
+  "homepage": "https://github.com/SH20RAJ/BlurryImageLoader"
+}
