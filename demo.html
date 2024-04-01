@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blurred Image Loader Demo</title>
+    <meta name="description" content="Demo for Blurred Image Loader library. Load images with a blur effect.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+        .image-container img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+        footer a {
+            color: #333;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blurred Image Loader Demo</h1>
+
+        <div class="image-container">
+            <!-- Example with data-src attribute -->
+            <img class="blurry-image" data-src="https://unsplash.com/photos/HYHYGLs-Rp8/download" alt="">
+        </div>
+
+        <div class="image-container">
+            <!-- Example with regular src attribute -->
+            <img class="blurry-image" src="https://unsplash.com/photos/hteGzeFuB7w/download" alt="Coffee Mugs">
+        </div>
+    </div>
+
+    <!-- Include the library -->
+    <script src="https://cdn.jsdelivr.net/gh/SH20RAJ/BlurryImageLoader@latest/BlurryImageLoader.js"></script>
+    <script>
+        // Load all images with class .blurry-image
+        BlurryImageLoader.loadAllImagesWithBlur('.blurry-image');
+    </script>
+
+    <footer>
+        <a href="https://github.com/SH20RAJ/BlurryImageLoader" target="_blank">GitHub Repository</a>
+        <a href="https://github.com/SH20RAJ" target="_blank">SH20RAJ's GitHub</a>
+    </footer>
+</body>
+</html>
