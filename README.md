@@ -63,7 +63,7 @@ To load all images on a page with a blur effect, use `loadAllImagesWithBlur`:
 BlurryImageLoader.loadAllImagesWithBlur();
 ```
 
-Using Selectors:
+### Using Selectors:
 
 ```javascript
 // Load all images with class .blurry-image
