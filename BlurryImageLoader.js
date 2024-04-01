@@ -22,14 +22,43 @@ var BlurryImageLoader = (function() {
             }
             removeBlur(imageElement);
         };
-        tempImage.src = imageUrl;
+
+        if (typeof window !== 'undefined') {
+            // Browser environment
+            tempImage.src = imageUrl;
+        } else {
+            // Node.js environment
+            var fs2 = require('fs');
+            fs2.readFile(imageUrl, function(err, data) {
+                if (err) throw err;
+                tempImage.src = `data:image/jpeg;base64,${data.toString('base64')}`;
+            });
+        }
     }
 
     function loadAllImagesWithBlur(selector = 'img') {
-        var imageElements = document.querySelectorAll(selector);
+        var imageElements;
+        if (typeof window !== 'undefined') {
+            imageElements = document.querySelectorAll(selector);
+        } else {
+            // For Node.js, we assume the selector is an array of image paths
+            imageElements = selector.map(function(path) {
+                var img = new Image();
+                img.src = path;
+                return img;
+            });
+        }
         imageElements.forEach(function(imageElement) {
             loadImageWithBlur(imageElement);
         });
+    }
+
+    // Export functions for Node.js
+    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+        module.exports = {
+            loadImageWithBlur: loadImageWithBlur,
+            loadAllImagesWithBlur: loadAllImagesWithBlur
+        };
     }
 
     return {
