@@ -1,7 +1,7 @@
 # BlurryImageLoader
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/SH20RAJ/BlurryImageLoader)
-![GitHub](https://img.shields.io/github/license/SH20RAJ/BlurryImageLoader)
+[![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FBlurryImageLoader%2F&labelColor=%23ff8a65&countColor=%23d9e3f0&style=flat)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FSH20RAJ%2FBlurryImageLoader%2F)
+![GitHub](https://img.shields.io/github/license/SH20RAJ/BlurryImageLoader?)
 ![GitHub last commit](https://img.shields.io/github/last-commit/SH20RAJ/BlurryImageLoader)
 ![GitHub issues](https://img.shields.io/github/issues/SH20RAJ/BlurryImageLoader)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/SH20RAJ/BlurryImageLoader)
