@@ -42,8 +42,13 @@ You can also include `BlurryImageLoader` in your HTML directly from the jsDelivr
 ```
 or
 ```html
-<!-- Specific version with npm (replace x.y.z with the version you need) -->
-<script src="https://cdn.jsdelivr.net/npm/blurry-image-loader@x.y.z/BlurryImageLoader.js"></script>
+<!-- Specific version with npm (replace 1.0.1 with the version you need) -->
+<script src="https://cdn.jsdelivr.net/npm/blurry-image-loader@1.0.1"></script>
+```
+or
+```html
+<!-- Specific version with npm (replace 1.0.1 with the version you need) -->
+<script defer async src="https://unpkg.com/blurry-image-loader"></script>
 ```
 
 ## Usage
